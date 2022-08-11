@@ -9,7 +9,6 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DebugType>None</DebugType>
 
     <Configuration>Release</Configuration>
     <Optimize>true</Optimize>

@@ -21,7 +21,8 @@ string appDirPath = Path.Combine (
 if (! Directory.Exists (appDirPath))
 	Directory.CreateDirectory (appDirPath);
 
-using StreamWriter logWriter = File.AppendText (processName + ".log");
+using StreamWriter logWriter = File.AppendText (Path.Combine (
+		appDirPath, processName + ".log"));
 logWriter.AutoFlush = true;
 string ioConnStr = args[0];
 
