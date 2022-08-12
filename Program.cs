@@ -14,7 +14,7 @@ using DpcNs;
 
 // AppContext.SetSwitch ("Switch.Microsoft.Data.SqlClient.SuppressInsecureTLSWarning", true);
 
-string processName = System.Diagnostics.Process.GetCurrentProcess ().ProcessName;
+string processName = Process.GetCurrentProcess ().ProcessName;
 string appDirPath = Path.Combine (
 	Environment.GetFolderPath (Environment.SpecialFolder.CommonApplicationData),
 	processName);
