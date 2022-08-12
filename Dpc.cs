@@ -28,11 +28,11 @@ class Dpc
 	
 	async Task<Dpc> initializeAsync ()
 	{
-		await checkConnectionOpen ();
 		ioSqlCmd.CommandText = "select pointConnStrTpl from settings;";
 		object? val = null;
 		while (val == null)
 		{
+			await checkConnectionOpen ();
 			try
 			{
 				val = await ioSqlCmd.ExecuteScalarAsync ();
